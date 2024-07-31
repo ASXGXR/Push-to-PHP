@@ -3,7 +3,7 @@ document.getElementById('enquiryForm').addEventListener('submit', function(event
 
     const formData = new FormData(this);
 
-    fetch('https://3507.co.uk/enquiries/enquiry_in.php', {
+    fetch('https://cors-anywhere.herokuapp.com/https://3507.co.uk/enquiries/enquiry_in.php', {
         method: 'POST',
         body: formData
     })
